@@ -1,0 +1,50 @@
+<svg
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="bubbleGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Chat Bubble -->
+  <path
+    d="M96 96
+       Q96 48 144 48
+       H368
+       Q416 48 416 96
+       V272
+       Q416 320 368 320
+       H208
+       L144 384
+       V320
+       H144
+       Q96 320 96 272
+       Z"
+    fill="url(#bubbleGradient)"
+  />
+
+  <!-- Connections -->
+  <line x1="200" y1="180" x2="260" y2="140" stroke="white" stroke-width="10" />
+  <line x1="200" y1="180" x2="300" y2="200" stroke="white" stroke-width="10" />
+  <line x1="300" y1="200" x2="340" y2="140" stroke="white" stroke-width="10" />
+
+  <!-- Nodes -->
+  <circle cx="200" cy="180" r="18" fill="white" />
+  <circle cx="260" cy="140" r="14" fill="white" />
+  <circle cx="300" cy="200" r="20" fill="#FDBA74" stroke="white" stroke-width="6"/>
+
+  <!-- Glowing Node -->
+  <circle cx="340" cy="140" r="22" fill="url(#glow)" />
+</svg>
